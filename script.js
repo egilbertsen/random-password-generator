@@ -88,7 +88,7 @@ function generatePassword() {
   // character each loop, until we reach the length set by the user.
 
   for (var i=0; i<charLength; i++) {
-    var x  = Math.floor(Math.random()*availChar.length);
+    var x  = Math.floor(Math.random()*(availChar.length-1));
     passCreate += availChar[x];
   };
   return passCreate;
